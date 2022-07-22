@@ -1,6 +1,8 @@
 import {ethers} from "ethers";
 import EpicNft from "./assets/EpicNft.json";
 
+
+//TODO: update this to actual address once deployed
 const CONTRACT_ADDRESS = "0x536637f83d00E0a5A2ae3F417465ba50Dc908E44";
 
 export const askContractToMintNft = async () => {

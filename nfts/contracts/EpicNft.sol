@@ -9,6 +9,7 @@ import "hardhat/console.sol";
 import { Base64 } from "./libraries/Base64.sol";
 
 contract EpicNft is ERC721URIStorage {
+  //TODO: Set limit on # NFTs (Display current count on front end)
   using Counters for Counters.Counter;
   Counters.Counter private _tokenIds;
 
@@ -82,7 +83,7 @@ contract EpicNft is ERC721URIStorage {
     console.log(finalTokenUri);
     console.log("--------------------\n");
 
-    // Update your URI!!!
+    // Something wrong here-- must check
     _setTokenURI(newItemId, finalTokenUri);
   
     _tokenIds.increment();
